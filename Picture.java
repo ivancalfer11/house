@@ -55,7 +55,7 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(150);
+        
         
         sun2 = new Circle();
         sun2.changeColor("green");
@@ -94,4 +94,12 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    /**
+     * mover el sol
+     */
+    public void moveSun()
+    {
+        sun.slowMoveVertical(150);
+        
+    }   
 }
