@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
+    private Person person;
 
     /**
      * Constructor for objects of class Picture
@@ -107,4 +108,15 @@ public class Picture
        window.changeColor("white");
     } 
     
+    /**
+     * crear metodo que cree una persona y se mueva
+     */
+    public void createPersonMove()
+    {
+     person= new Person();
+     person.moveHorizontal(-240);
+     person.moveVertical(8);
+     person.makeVisible();
+        
+    }
 }
