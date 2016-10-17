@@ -114,9 +114,10 @@ public class Picture
     public void createPersonMove()
     {
      person= new Person();
-     person.moveHorizontal(-240);
-     person.moveVertical(8);
+     person.moveHorizontal(-200);
+     person.moveVertical(19);
      person.makeVisible();
-        
+     person.slowMoveHorizontal(100);
+     
     }
 }
